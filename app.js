@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-app.get("/", (req, res) => {
-    res.send("Welcome to shopeasy!");
-})
+app.get('/', (req, res) => {
+    res.send("Welcome to shopeasy! from ajay-coder-new");
+});
 
 app.listen(port, () => {
     console.log('server is running on port ${port}');
-})
+});
